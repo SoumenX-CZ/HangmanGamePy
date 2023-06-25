@@ -60,7 +60,7 @@ lives_visual_dict = {
         7: "",
     }
 
-words = ["kolo","anděl","kočka","auto","ekonomie","politika","písek","voda","země"]
+words = ["kolo","anděl","kočka","auto","ekonomie","politika","písek","voda","země","počítač","obrazovka","myš","klávesnice","USB","Github"]
 
 def get_valid_word(words):
     word = random.choice(words) 
