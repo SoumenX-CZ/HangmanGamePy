@@ -1,13 +1,14 @@
 import random
 import string
 
+#just visual json dictonary
 lives_visual_dict = {
         0: """
                 ___________
                | /        | 
                |/        ( )
                |          |
-               |         / \\
+               |         / \
                |
            """,
         1: """
@@ -60,6 +61,7 @@ lives_visual_dict = {
         7: "",
     }
 
+#word list
 words = ["Partička","krokodýl", "smaženice", "houby", "kolo","anděl","kočka","auto","ekonomie","politika","písek","voda","země","počítač","obrazovka","myš","klávesnice","USB","Github","miska","vidlička","lednička","nůž","matematika","příklad"]
 
 def get_valid_word(words):
@@ -69,7 +71,7 @@ def get_valid_word(words):
 
     return word.upper()
 
-
+#game loop
 def hangman():
     word = get_valid_word(words)
     word_letters = set(word)  
