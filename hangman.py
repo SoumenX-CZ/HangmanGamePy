@@ -61,16 +61,16 @@ lives_visual_dict = {
         7: "",
     }
 
-#List slov
 words = ["Partička","krokodýl", "smaženice", "houby", "kolo","anděl","kočka","auto","ekonomie","politika","písek","voda","země","počítač","obrazovka","myš","klávesnice","USB","Github","miska","vidlička","lednička","nůž","matematika","příklad"]
-
+#falwnodidkxom
 def get_valid_word(words):
     word = random.choice(words) 
     while '-' in word or ' ' in word:
         word = random.choice(words)
 
     return word.upper()
-
+#alfniw
+#dlfpwondifksomcniks
 #game loop
 def hangman():
     word = get_valid_word(words)
@@ -93,7 +93,7 @@ def hangman():
             if user_letter in word_letters:
                 word_letters.remove(user_letter)
                 print('')
-
+#dalfniwkd
             else:
                 lives = lives - 1 
                 print('\nPísmeno,', user_letter, 'není ve slově.')
@@ -110,6 +110,8 @@ def hangman():
     else:
         print('SUPER! Uhodl/a jsi to - ', word, '!!')
 
-
+#falwnoid
+#afwopqnodfnick
+#falwniqkdmc
 if __name__ == '__main__':
     hangman()
