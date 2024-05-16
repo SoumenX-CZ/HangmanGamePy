@@ -62,7 +62,7 @@ lives_visual_dict = {
     }
 
 words = ["Partička","krokodýl", "smaženice", "houby", "kolo","anděl","kočka","auto","ekonomie","politika","písek","voda","země","počítač","obrazovka","myš","klávesnice","USB","Github","miska","vidlička","lednička","nůž","matematika","příklad"]
-#falwnodidkxom
+
 def get_valid_word(words):
     word = random.choice(words) 
     while '-' in word or ' ' in word:
@@ -70,8 +70,6 @@ def get_valid_word(words):
 
     return word.upper()
 #alfniw
-#dlfpwondifksomcniks
-#game loop
 def hangman():
     word = get_valid_word(words)
     word_letters = set(word)  
@@ -83,10 +81,11 @@ def hangman():
         print('Tvůj počet životů: ', lives)
         print("Použitá písmena: ",' '.join(used_letters))
 
+#dpwoinda
         word_list = [letter if letter in used_letters else '-' for letter in word]
         print(lives_visual_dict[lives])
         print('Slovo: ', ' '.join(word_list))
-
+#aůwpdonf
         user_letter = input('Hadané písmeno: ').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
@@ -111,7 +110,5 @@ def hangman():
         print('SUPER! Uhodl/a jsi to - ', word, '!!')
 
 #falwnoid
-#afwopqnodfnick
-#falwniqkdmc
 if __name__ == '__main__':
     hangman()
